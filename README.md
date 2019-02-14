@@ -23,6 +23,8 @@ The flow of this tutorial is as follows:
 ## Step 1. Create a Watson Studio instance 
 Visit the [IBM Cloud](https://cloud.ibm.com), and login or sign up. The account you create will be able to access a selection of free services- dubbed "Lite plans". 
 
+**Note:** You'll be asked what region you'd like to create your Watson Machine Learning Service Instance in. While any region is suitable for this code lab, I'd recommend the US South region.
+
 Next, click the Catalog tab and search "Watson Studio". 
 
 ![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/1_watson_studio_search.png "Watson studio")
@@ -51,3 +53,31 @@ Nifty.
 ![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/5_watson_studio_project_creation.png "Watson studio project creation")
 
 ## Step 3. Hook up the Jupyter notebook
+Within your new deep learning project, select the "Add to project" button and then select a "Notebook" asset. 
+
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/6_add_deep_learning_notebook.png "Jupyter notebook asset")
+
+Select "From URL" from the tabs along the top, and insert the URL to the Jupyter notebook in this repository. 
+
+`https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/wml-mnist-classifier.ipynb`
+
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/7_notebook_from_url.png "Notebook URL")
+
+Selecting the "Default Python 3.5 Free (1 vCPU and 4GB RAM)" option will provision a virtual machine to run your Jupyter notebook from. 
+
+**Note:** The dialogue may change in the future. Simply select the free vCPU option. 
+
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/8_notebook_python_version.png "Python version")
+
+You will then see a loading screen as the virtual CPU is created. 
+
+## Step 4. Get the data and upload it to your storage bucket
+The dataset we'll be using to train our TensorFlow classification model in this instance is the [MNIST Dataset](http://yann.lecun.com/exdb/mnist/). 
+
+Either visit the link above, select and download all of the four files available, or download the four files from the list below:
+1. [train-images-idx3-ubyte.gz](http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz):  training set images (9912422 bytes) 
+2. [train-labels-idx1-ubyte.gz](http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz):  training set labels (28881 bytes) 
+3. [t10k-images-idx3-ubyte.gz](http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz):   test set images (1648877 bytes) 
+4. [t10k-labels-idx1-ubyte.gz](http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz):   test set labels (4542 bytes)
+
+Once you have the four files on your local system, then you will need to navigate to your freshly created Cloud Object Storage bucket. 
