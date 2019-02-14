@@ -1,3 +1,5 @@
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/header.png "Header")
+
 # Creating an MNIST Classifier using Watson Machine Learning and TensorFlow
 
 This repository acts as a tutorial showing how to quickly get up and running using GPUs in the IBM Cloud via Watson Studio, and Watson Machine Learning (WML). 
@@ -18,6 +20,7 @@ The flow of this tutorial is as follows:
 
 # Tutorial
 ## Step 1. Create a Watson Studio instance 
-Visit the (IBM Cloud)[https://cloud.ibm.com], and login or sign up. The account you create will be able to access a selection of free services- dubbed "Lite plans". 
+Visit the [IBM Cloud](https://cloud.ibm.com), and login or sign up. The account you create will be able to access a selection of free services- dubbed "Lite plans". 
 
 Next, click the Catalog tab and search "Watson Studio". 
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/1_watson_studio_search.png, "Watson studio")
