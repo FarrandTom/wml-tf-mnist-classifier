@@ -62,7 +62,7 @@ Within your new deep learning project, select the "Add to project" button and th
 
 Select "From URL" from the tabs along the top, and insert the URL to the Jupyter notebook in this repository. 
 
-`https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/wml-mnist-classifier.ipynb`
+`https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/mnist-classifier.ipynb`
 
 ![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/7_notebook_from_url.png "Notebook URL")
 
