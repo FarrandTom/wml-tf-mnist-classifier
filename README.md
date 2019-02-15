@@ -16,9 +16,9 @@ The flow of this tutorial is as follows:
 3. Hook up the Jupyter notebook
 4. Get the data, and upload it to your storage bucket
 5. Obtain the credentials for both COS and WML
-**6. Add your credentials to the template notebook**
-**7. Train the model- monitoring progress and results**
-**8. Deploy the model, and the test the endpoint**
+6. **Add your credentials to the template notebook**
+7. **Train the model- monitoring progress and results**
+8. **Deploy the model, and the test the endpoint**
 
 The steps highlighted in **bold** will be ran in the template Jupyter notebook provided within the Watson Studio development environment.
 
@@ -98,8 +98,27 @@ You can then drag and drop the MNIST data and labels into your training bucket i
 (SCREENSHOT OF MNIST-CLASSIFIER-TRAINING BUCKET FILES)
 
 ## 5. Obtain the credentials for both COS and WML
+
+### Cloud Object Storage
 While still in the user interface for your Cloud Object Storage instance we will retrieve the service credentials. These act as the Cloud Object Storage's passport- allowing it to verify itself as belonging to your account, and laying out how other services can communicate to it. 
 
+Visit the "Service Credentials" tab.
 
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/13_service_credentials_tab.png "Service credentials tab")
 
+Copy your "editor" credentials to clipboard (These will allow you interact more readily with the COS API if you were to do further custom work in WML). 
+
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/14_cos_credentials.png "COS credentials")
+
+Paste these into a notepad file which you can easily reference later. 
+
+### Watson Machine Learning
+
+We will now do the same exercise for the Watson Machine Learning instance. Return back to your [Resource List](https://cloud.ibm.com/resources), and select the Watson Machine Learning instance (look for the name *pm-20-dsx* or similar). 
+
+Again visit the "Service Credentials" tab, and then copy your "writer" credentials into the notepad file alongside the Cloud Object Storage credentials. 
+
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/15_wml_credentials.png "WML credentials")
+
+### You are now ready to work in the Jupyter notebook which you created in step 3 of the flow. Open that up in Watson Studio and continue from there!
 
