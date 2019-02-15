@@ -112,6 +112,12 @@ Copy your "editor" credentials to clipboard (These will allow you interact more 
 
 Paste these into a notepad file which you can easily reference later. 
 
+We also need to collect our `endpoint_url` which will be used later in the tutorial, in conjunction with the service credentials to connect our training job to the all important data!
+
+The `endpoint_url` can be found under the "Endpoint" tab of the same menu under which the "Service Credentials" were found. To obtain the correct endpoint filter for the same level of resiliency as your COS bucket was created under i.e. in the context of this tutorial: "Regional". Next, filter down to the correct geography, in our case "eu-gb". The resulting under point should be similar to the one displayed in the screenshot below. 
+
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/11_cos_ednpoint_url.png "COS endpoint URL")
+
 ### Watson Machine Learning
 
 We will now do the same exercise for the Watson Machine Learning instance. Return back to your [Resource List](https://cloud.ibm.com/resources), and select the Watson Machine Learning instance (look for the name *pm-20-dsx* or similar). 
