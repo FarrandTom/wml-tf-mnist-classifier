@@ -89,13 +89,13 @@ Once you have the four files on your local system, then you will need to navigat
 
 If you select the Cloud Object Storage instance (it is likely to have a name similar to *cloud-object-storage-dsx*), you can then create two new buckets.
 
-(BUCKET CREATION SCREENSHOT)
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/9_bucket_creation.png "Bucket creation")
 
 One bucket will hold our training data, the other will contain the results. I have named mine `mnist-classifier-training` and `mnist-classifier-results` respectively. 
 
 You can then drag and drop the MNIST data and labels into your training bucket i.e. `mnist-classifier-training`. The resulting bucket should then be a list of 4 `.gz` files as below. 
 
-(SCREENSHOT OF MNIST-CLASSIFIER-TRAINING BUCKET FILES)
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/10_training_bucket.png "Training classifier bucket")
 
 ## 5. Obtain the credentials for both COS and WML
 
