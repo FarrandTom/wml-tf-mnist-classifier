@@ -4,7 +4,7 @@
 
 This repository acts as a tutorial showing how to quickly get up and running using GPUs in the IBM Cloud via Watson Studio, and Watson Machine Learning (WML). 
 
-We are going to walk through the set up of a simple MNIST classifier. This use case serves as an easy introduction to those newer to deep learning, while allowing more experienced developers to focus on the nuances of the Watson offerings. If you are tired of MNIST examples then there is a [style transfer example here](https://github.com/ChrisParsonsDev/wml-pytorch-style-transfer), which is an alternate way to get hands-on. 
+You are going to walk through the set up of a simple MNIST classifier. This use case serves as an easy introduction to those newer to deep learning, while allowing more experienced developers to focus on the nuances of the Watson offerings. If you are tired of MNIST examples then there is a [style transfer example here](https://github.com/ChrisParsonsDev/wml-pytorch-style-transfer), which is an alternate way to get hands-on. 
 
 This repository will contain: 
 1. TensorFlow model
