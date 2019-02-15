@@ -15,9 +15,12 @@ The flow of this tutorial is as follows:
 2. Add a Deep Learning project
 3. Hook up the Jupyter notebook
 4. Get the data, and upload it to your storage bucket
-5. Add your credentials to the template notebook
-6. Train the model- monitoring progress and results
-7. Deploy the model, and the test the endpoint
+5. Obtain the credentials for both COS and WML
+**6. Add your credentials to the template notebook**
+**7. Train the model- monitoring progress and results**
+**8. Deploy the model, and the test the endpoint**
+
+The steps highlighted in **bold** will be ran in the template Jupyter notebook provided within the Watson Studio development environment.
 
 # Tutorial
 ## Step 1. Create a Watson Studio instance 
@@ -80,4 +83,23 @@ Either visit the link above, select and download all of the four files available
 3. [t10k-images-idx3-ubyte.gz](http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz):   test set images (1648877 bytes) 
 4. [t10k-labels-idx1-ubyte.gz](http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz):   test set labels (4542 bytes)
 
-Once you have the four files on your local system, then you will need to navigate to your freshly created Cloud Object Storage bucket. 
+Once you have the four files on your local system, then you will need to navigate to your freshly created Cloud Object Storage bucket. This can be done by [clicking here](https://cloud.ibm.com/resources)- this will navigate you to your IBM Cloud Resource list. This is simply a list of all the provisioned services within your IBM Cloud account. You should be able to find your Watson Studio, Cloud Object Storage, and Watson Machine Learning instances under one of the various headings. 
+
+![alt text](https://github.com/FarrandTom/wml-tf-mnist-classifier/blob/master/readme-images/12_resource_list.png "Resource list")
+
+If you select the Cloud Object Storage instance (it is likely to have a name similar to *cloud-object-storage-dsx*), you can then create two new buckets.
+
+(BUCKET CREATION SCREENSHOT)
+
+One bucket will hold our training data, the other will contain the results. I have named mine `mnist-classifier-training` and `mnist-classifier-results` respectively. 
+
+You can then drag and drop the MNIST data and labels into your training bucket i.e. `mnist-classifier-training`. The resulting bucket should then be a list of 4 `.gz` files as below. 
+
+(SCREENSHOT OF MNIST-CLASSIFIER-TRAINING BUCKET FILES)
+
+## 5. Obtain the credentials for both COS and WML
+While still in the user interface for your Cloud Object Storage instance we will retrieve the service credentials. These act as the Cloud Object Storage's passport- allowing it to verify itself as belonging to your account, and laying out how other services can communicate to it. 
+
+
+
+
